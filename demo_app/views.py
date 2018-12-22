@@ -8,8 +8,8 @@ from django.contrib.auth import login, authenticate
 import json
 import pandas as pd
 
-# loaded_model = joblib.load('demo_app/demo_model.pkl')
-loaded_model = joblib.load('/home/kikagakuNishizawa/kikagakunishizawa.pythonanywhere.com/demo_app/demo_model.pkl')
+loaded_model = joblib.load('demo_app/demo_model.pkl')
+# loaded_model = joblib.load('/home/kikagakuNishizawa/kikagakunishizawa.pythonanywhere.com/demo_app/demo_model.pkl')
 
 @login_required
 def index(request):
