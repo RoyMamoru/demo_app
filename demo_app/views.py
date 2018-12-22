@@ -4,7 +4,8 @@ from .models import Customers
 from sklearn.externals import joblib
 import numpy as np
 
-loaded_model = joblib.load('demo_app/demo_model.pkl')
+# loaded_model = joblib.load('demo_app/demo_model.pkl')
+loaded_model = joblib.load('/home/kikagakuNishizawa/kikagakunishizawa.pythonanywhere.com/demo_app/demo_model.pkl')
 
 def index(request):
     return render(request, 'demo_app/index.html', {})
